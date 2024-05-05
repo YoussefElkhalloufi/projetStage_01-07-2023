@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB96165D-099C-412F-B9FA-16B901543958}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>pROjet_1111.My.MyApplication</StartupObject>
+    <RootNamespace>pROjet_1111</RootNamespace>
+    <AssemblyName>pROjet 1111</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\ye_ar\Desktop\test_depl_archite\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>pROjet 1111.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>pROjet 1111.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>true</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4E5CC9EEC5AEB0544E8D61FA6A2BCC048BCEE57B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>pROjet 1111_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accees_doc.Designer.vb">
+      <DependentUpon>accees_doc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="accees_doc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acces_plan.Designer.vb">
+      <DependentUpon>acces_plan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="acces_plan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accueil.Designer.vb">
+      <DependentUpon>accueil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="accueil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="afficher_client.Designer.vb">
+      <DependentUpon>afficher_client.vb</DependentUpon>
+    </Compile>
+    <Compile Include="afficher_client.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="afficher_facture.Designer.vb">
+      <DependentUpon>afficher_facture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="afficher_facture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajouter_client.Designer.vb">
+      <DependentUpon>ajouter_client.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ajouter_client.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajouter_document.Designer.vb">
+      <DependentUpon>ajouter_document.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ajouter_document.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajouter_facture.Designer.vb">
+      <DependentUpon>ajouter_facture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ajouter_facture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facture.Designer.vb">
+      <DependentUpon>Facture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Facture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="plans.designer.vb">
+      <DependentUpon>plans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="plans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="accees_doc.resx">
+      <DependentUpon>accees_doc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acces_plan.resx">
+      <DependentUpon>acces_plan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accueil.resx">
+      <DependentUpon>accueil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="afficher_client.resx">
+      <DependentUpon>afficher_client.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="afficher_facture.resx">
+      <DependentUpon>afficher_facture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajouter_client.resx">
+      <DependentUpon>ajouter_client.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajouter_document.resx">
+      <DependentUpon>ajouter_document.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajouter_facture.resx">
+      <DependentUpon>ajouter_facture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facture.resx">
+      <DependentUpon>Facture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="plans.resx">
+      <DependentUpon>plans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="pROjet 1111_TemporaryKey.pfx" />
+    <None Include="Resources\Icons8-Windows-8-Programming-Add-Property.72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Artbees-Bee-Customized-Blueprint-Simple-NoShadow.32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Artbees-Bee-Customized-Blueprint-Simple-NoShadow.128.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ionic-Ionicons-Search.64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ionic-Ionicons-Search.72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons8-Windows-8-Files-Add-File.72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microsoft-Fluentui-Emoji-Mono-Open-File-Folder.72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Erix-Subyarko-Medical-Invoice-Bill-Payment-Billing-Hospital.72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Back-2-2.72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Roundicons-100-Free-Solid-Cancel.72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Steve-Zondicons-Add-Solid.72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons8-Ios7-Photo-Video-Add-Image-Filled.72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saki-NuoveXT-Actions-file-close.64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arturo-Wibawa-Akar-Cross.48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arturo-Wibawa-Akar-Cross.32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictogrammers-Material-Window-minimize.32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fa-Team-Fontawesome-FontAwesome-File-Pdf.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gestion_architecture.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gestion_architecture_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>gestion_architecture.mdf</DependentUpon>
+    </Content>
+    <Content Include="pdficon.ico" />
+    <None Include="Resources\png-clipart-architectural-designer-architecture-logo-design-angle-building.jpg" />
+    <None Include="Resources\Pictogrammers-Material-Database-search-outline.64.jpg" />
+    <None Include="Resources\pdficon.bmp" />
+    <None Include="Resources\Iconsmind-Outline-Add-User.64.jpg" />
+    <None Include="Resources\Capture d%27écran 2023-06-30 142746.jpg.png" />
+    <None Include="Resources\Iconsmind-Outline-Back-2-2.48.jpg" />
+    <None Include="Resources\Iconsmind-Outline-Back-2-2.32.jpg" />
+    <Content Include="Resources\pdficon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
